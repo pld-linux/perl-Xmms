@@ -1,6 +1,6 @@
 #
 # Conditional build:
-# _with_tests - perform "make test" (runs xmms)
+%bcond_with	tests	# perform "make test" (runs xmms)
 #
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Xmms
@@ -39,7 +39,7 @@ przez xmms-a API xmms_remote.
 	INSTALLDIRS=vendor
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{?_with_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
