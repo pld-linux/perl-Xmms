@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Xmms
 %define	pnam	Perl
-Summary:	Perl modules for interaction with xmms
-Summary(pl):	Modu³y Perla pozwalaj±ce na interakcjê z xmms
+Summary:	Perl modules for interaction with XMMS
+Summary(pl):	Modu³y Perla pozwalaj±ce na interakcjê z XMMS
 Name:		perl-Xmms
 Version:	0.12
 Release:	2
@@ -20,17 +20,17 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-This package provides Perl modules for interaction with popular xmms
+This package provides Perl modules for interaction with popular XMMS
 player. Most important ones are: Xmms, which provides shell-like
-interface to xmms and Xmms::Remote, which is Perl interface to
+interface to XMMS and Xmms::Remote, which is Perl interface to
 xmms_remote API.
 
 %description -l pl
 Pakiet zawiera modu³y Perla pozwalaj±ce na interakcjê z popularnym
-odtwarzaczem xmms. Najwa¿niejsze z tych modu³ów to: Xmms, który
-umo¿liwia sterowanie xmms-em przez interfejs przypominaj±cy pow³okê
+odtwarzaczem XMMS. Najwa¿niejsze z tych modu³ów to: Xmms, który
+umo¿liwia sterowanie XMMS-em przez interfejs przypominaj±cy pow³okê
 i Xmms::Remote, który jest interfejsem perlowym do udostêpnianego
-przez xmms-a API xmms_remote.
+przez XMMS-a API xmms_remote.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
