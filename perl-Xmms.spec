@@ -1,11 +1,7 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
+# _with_tests - perform "make test" (runs xmms)
 #
-
-# I'm not sure if running these tests is safe..
-%define		_without_tests 1
-
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Xmms
 %define		pnam	Perl
@@ -22,8 +18,6 @@ BuildRequires:	perl-devel >= 5.6
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		_noautoreq	"perl(anything_fake_or_conditional)"
 
 %description
 This package provides perl modules for interaction with popular xmms
@@ -42,13 +36,10 @@ przez xmms-a API xmms_remote.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-# Don't use pipes here: they generally don't work. Apply a patch.
 perl Makefile.PL
-# %{__make}
-# if module isn't noarch, use:
 %{__make} OPTIMIZE="%{rpmcflags}"
 
-%{!?_without_tests:%{__make} test}
+%{?_with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -62,8 +53,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-# use macros:
-#%{perl_sitelib}/...
 %{perl_sitearch}/Xmms.pm
 %{perl_sitearch}/Xmms
 %dir %{perl_sitearch}/auto/Xmms
