@@ -11,7 +11,7 @@ Name:		perl-Xmms
 Version:	0.12
 Release:	2
 # same as perl
-License:	GPL or Artistic
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	d1fbf6d09330f7855dd80f3ceee8e6f7
@@ -38,7 +38,8 @@ przez xmms-a API xmms_remote.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
 
