@@ -3,8 +3,8 @@
 %bcond_with	tests	# perform "make test" (runs xmms)
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Xmms
-%define	pnam	Perl
+%define		pdir	Xmms
+%define		pnam	Perl
 Summary:	Perl modules for interaction with XMMS
 Summary(pl):	Modu³y Perla pozwalaj±ce na interakcjê z XMMS-em
 Name:		perl-Xmms
