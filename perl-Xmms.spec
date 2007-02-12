@@ -6,7 +6,7 @@
 %define		pdir	Xmms
 %define		pnam	Perl
 Summary:	Perl modules for interaction with XMMS
-Summary(pl):	Modu³y Perla pozwalaj±ce na interakcjê z XMMS-em
+Summary(pl.UTF-8):   ModuÅ‚y Perla pozwalajÄ…ce na interakcjÄ™ z XMMS-em
 Name:		perl-Xmms
 Version:	0.12
 Release:	2
@@ -25,11 +25,11 @@ player. Most important ones are: Xmms, which provides shell-like
 interface to XMMS and Xmms::Remote, which is Perl interface to
 xmms_remote API.
 
-%description -l pl
-Pakiet zawiera modu³y Perla pozwalaj±ce na interakcjê z popularnym
-odtwarzaczem XMMS. Najwa¿niejsze z tych modu³ów to: Xmms, który
-umo¿liwia sterowanie XMMS-em przez interfejs przypominaj±cy pow³okê
-i Xmms::Remote, który jest interfejsem perlowym do udostêpnianego
+%description -l pl.UTF-8
+Pakiet zawiera moduÅ‚y Perla pozwalajÄ…ce na interakcjÄ™ z popularnym
+odtwarzaczem XMMS. NajwaÅ¼niejsze z tych moduÅ‚Ã³w to: Xmms, ktÃ³ry
+umoÅ¼liwia sterowanie XMMS-em przez interfejs przypominajÄ…cy powÅ‚okÄ™
+i Xmms::Remote, ktÃ³ry jest interfejsem perlowym do udostÄ™pnianego
 przez XMMS-a API xmms_remote.
 
 %prep
