@@ -6,7 +6,7 @@
 %define		pdir	Xmms
 %define		pnam	Perl
 Summary:	Perl modules for interaction with XMMS
-Summary(pl.UTF-8):   Moduły Perla pozwalające na interakcję z XMMS-em
+Summary(pl.UTF-8):	Moduły Perla pozwalające na interakcję z XMMS-em
 Name:		perl-Xmms
 Version:	0.12
 Release:	2
