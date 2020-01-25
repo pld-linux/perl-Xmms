@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_with	tests	# perform "make test" (runs xmms)
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Xmms
 %define		pnam	Perl
 Summary:	Perl modules for interaction with XMMS
