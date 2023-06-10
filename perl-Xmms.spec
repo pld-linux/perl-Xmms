@@ -8,7 +8,7 @@ Summary:	Perl modules for interaction with XMMS
 Summary(pl.UTF-8):	Moduły Perla pozwalające na interakcję z XMMS-em
 Name:		perl-Xmms
 Version:	0.12
-Release:	16
+Release:	17
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -17,6 +17,7 @@ Source0:	http://www.cpan.org/modules/by-module/Xmms/%{pdir}-%{pnam}-%{version}.t
 URL:		http://search.cpan.org/dist/Xmms-Perl/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	xmms-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
