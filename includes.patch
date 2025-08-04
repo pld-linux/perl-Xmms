@@ -1,0 +1,20 @@
+--- Xmms-Perl-0.12/Remote/Remote.xs.orig	2002-03-21 07:34:48.000000000 +0100
++++ Xmms-Perl-0.12/Remote/Remote.xs	2025-08-04 12:27:56.992635334 +0200
+@@ -6,6 +6,7 @@
+ 
+ #undef list
+ 
++#include "xmms/util.h"
+ #include "xmms/xmmsctrl.h"
+ 
+ typedef gint Xmms__Remote;
+--- Xmms-Perl-0.12/SongChange/SongChange.xs.orig	2000-04-13 18:36:34.000000000 +0200
++++ Xmms-Perl-0.12/SongChange/SongChange.xs	2025-08-04 12:28:29.459498200 +0200
+@@ -2,6 +2,7 @@
+ #include "perl.h"
+ #include "XSUB.h"
+ 
++#include "xmms/util.h"
+ #include "xmms/xmmsctrl.h"
+ #include "pthread.h"
+ 
